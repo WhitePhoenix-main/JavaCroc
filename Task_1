@@ -1,0 +1,23 @@
+/**
+ * Task_1
+ * @author Denis Savelyev
+ */
+public class Lesson_1 {
+    /* Я сейчас сижу и думаю, следует ли мне как-то более креативно
+    решить данную задачу. Или всё-таки достаточно простого и оптимизированного
+    решения?
+     */
+    public static void main (String [] args){
+        for (int i = 1; i <= 100; i++){
+            if (i % 3 == 0 && i % 5 != 0){
+                System.out.println("Fizz");
+            }
+            else if (i % 3 == 0 && i % 5 == 0){
+                System.out.println("FizzBuzz");
+            }
+            else {
+                System.out.println(i);
+            }
+        }
+    }
+}
