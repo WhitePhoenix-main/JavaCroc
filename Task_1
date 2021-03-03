@@ -1,0 +1,27 @@
+package ru.croc.tasks;
+
+/**
+ * Решение первой задачи
+ * @author Enix
+ * @version 2.0
+ */
+public class Task_1 {
+    /**
+     * Метод проверяет кратность числа(На 3 или на 5)
+     * @param num - Число для которго требуется определить кратность
+     * @return - Ответ в зависимости от кратности числа(Fizz - кратно трём и т.д.)
+     */
+    public static String multiplicity(int num){
+       String answer1 = "Fizz";
+       String answer2 = "Buzz";
+       String fin;
+       fin = (num % 15 == 0) ? answer1 + answer2 :
+               ((num % 5 == 0) ? answer2 : (num % 3 == 0) ? answer1 : Integer.toString(num));
+    return fin;
+}
+public static void main(String [] args) {
+    for (int i = 1; i <= 100; i++){
+        System.out.println(multiplicity(i));
+    }
+}
+}
